@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Заказ еды на вынос ::
+        Йокогама: суши-бар</title>
+        <link href="../styles/styles.css"
+        rel="stylesheet" type="text/css"
+        <meta name="description" content="Суши-бар
+        Йокогама. Сашими, суши, роллы, напитки.">
+        <meta name="keywords"
+        content="суши-бар, йокогама, сашими, суши, ролл">
+        <meta name="author" content="siksanov">
+        <meta name="generator" content="nano">
+    </head>
+    <body>
+        <header>
+            <div class="main_page">
+                <a href="../index.html"><img src="../images/sushi.jpg" title="Суши"></a>
+                <h1>Суши-бар <em>&laquo;Йокогама&raquo;</em></h1>
+            </div>
+            <nav class="navigation">
+                <a href="../index.html">Главная</a> |
+                <a href="../pages/sashimi.html">Сашими</a> |
+                <a href="../pages/sushi.html">Суши</a> |
+                <a href="../pages/rolls.html">Роллы</a> |
+                <a href="../pages/catalog.html">Каталог</a> |
+                <a href="../pages/pricelist.html">Прайс-лист</a>
+            </nav>
+        </header>
+        <main>
+            <h2>Заказ еды на вынос</h2>
+            <form action="http://localhost/sample1"
+            method="post" enctype="text/plain">
+                <p><label for="dishes">Что желаете
+                    заказать?</label><br>
+                    <select name="dishes" id="dishes" size="6"
+                        multiple>
+                        <optgroup label="Сашими">
+                            <option value="unagi">Унаги</option>
+                            <option value="hamachi">Хамачи</option>
+                        </optgroup>
+                        <optgroup label="Суши">
+                            <option value="chukka">Чукка</option>
+                            <option value="maguro">Магуро</option>
+                            <option value="tobiko">Тобико</option>
+                        </optgroup>
+                        <optgroup label="Роллы">
+                            <option value="kunsei_batakon">Кунсэй батакон</option>
+                            <option value="arigato">Аригато</option>
+                            <option value="mexican">Мексиканский</option>
+                        </optgroup>
+                    </select>
+                </p>
+                <p><label for="phone">По какому номеру Вам
+                перезвонить?</label><br>
+                <input type="text" name="phone" id="phone"
+                required></p>
+                <p><input type="submit"></p>
+            </form>
+        </main>
+        <footer>
+            <p>&copy; читатели книги &laquo;HTML и CSS&raquo;<br>Все права защищены.</p>
+        </footer>
+    </body>
+</html>
