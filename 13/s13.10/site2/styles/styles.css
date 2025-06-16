@@ -1,0 +1,11 @@
+body {margin: 0px;}
+.gallery-item img {width: 100%;}
+body.noscroll {overflow: hidden;}
+a[target=gallery] {font-size: 16pt;}
+table {
+    counter-reset: ca1;
+}
+a::before {
+    counter-increment: ca1;
+    content: counter(ca1) ". ";
+}
