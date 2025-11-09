@@ -1,116 +1,21 @@
-@font-face {
-    font-family: "Caviar Dreams";
-    src: url(../fonts/CaviarDreams.ttf);
-}
-@font-face {
-    font-family: "Caviar Dreams";
-    src: url(../fonts/Caviar_Dreams_Bold.ttf);
-    font-weight: bold;
-}
-@font-face {
-    font-family: "Caviar Dreams";
-    src: url(../fonts/Caviar_Dreams_Bold.ttf);
-    font-weight: bold;
-}    
-@font-face {
-    font-family: "Caviar Dreams";
-    src: url(../fonts/CaviarDreams_BoldItalic.ttf);
-    font-weight: bold;
-    font-style: italic;
-}
-body {font-family: Arial;}
-h1 {
-    font-size: 32pt;
-    font-family: Verdana;
-}
-p {
-    font-size: 14pt !important;
-}
-p.greeting{font-size: 24pt;}
-.main_page img {
-    width: 67%;
-    min-width: 200px;
-    max-width: 300px;
-}
-h1 em {font-weight: normal}
-header {text-align: center;}
-main {text-align: justify;}
-footer {text-align: right;}
-.advertising div {
-                    margin-left: 30pt;
-                    font-size: 12pt;
-                    margin-top: 5pt;
-                    margin-bottom: 5pt;
-                 }
-.bigger {font-size: 16pt;}
-table.pricelist th, table.pricelist td {
-    border: grey thin solid;
-    padding: 4px;
-}
-table.catalog {border-collapse: collapse;}
-table.catalog td {
-    border-top: black thin dotted;
-    border-bottom: black thin dotted;
-    padding: 10px;
-}
-table.pricelist thead th {
-    color: white;
-    background-color: grey;
-}
-table.pricelist tfoot td {
-    text-align: right;
-    font-style: italic;
-}
-nav {
-    float: left;
-    width: 150px;
-    margin: 10px 30px 10px 0px;
-    padding: 10px;
-    border: black medium double;
-    border-radius: 10px;
-}
-nav div {
-    font-size: 20pt;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-nav.navigation {
-    float: none;
-    width: auto;
-}
-.main_page {
+header {
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-table.catalog tr:first-child td {
-    border-top: none;
-}
-table.catalog tr:last-child td {
-    border-bottom: none;
-}
-table.catalog td p:first-of-type::first-letter {
-    font-size: 24pt;
-}
-table.pricelist tbody [colspan] {
+header nav a {
+    display: block;
     text-align: center;
+    
 }
-table.pricelist tbody tr :last-child:not(:only-child) {
-    background-color: lightgrey;
+header img {
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
-table.catalog h3 {
-    font-family: "Caviar Dreams";
-    font-size: 20pt;
-}
-table.catalog h3::after {content: ":";}
-h1 {
-    font-size: 32pt;
-    font-family: Verdana;
-    text-shadow: 3pt 3pt 5pt darkgrey;
-}
-table.catalog h3 {
-    font-variant: small-caps;
-    text-transform: capitalize;
-    letter-spacing: 2pt;
-}
-table.catalog td p:first-of-type::first-letter {
-    vertical-align: top;
+footer {
+    display: block;
+    text-align: right;
+    margin-right: 20px;
 }
